@@ -24,6 +24,7 @@ public class ShowSelectedObjects : MonoBehaviour
                     {
                         selectedObject.GetComponent<Unit>().unselected();
                         selectedObject = null;
+                        Debug.Log("Test");
                     }
                     selectedObject = hit.transform.gameObject;
                     selectedObject.GetComponent<Unit>().selected();
